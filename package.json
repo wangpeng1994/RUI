@@ -1,0 +1,30 @@
+{
+  "name": "rocket-ui",
+  "version": "1.0.0",
+  "description": "A React.js UI Toolkit for Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangpeng1994/rocket-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangpeng1994/rocket-ui/issues"
+  },
+  "homepage": "https://github.com/wangpeng1994/rocket-ui#readme",
+  "devDependencies": {
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0"
+  }
+}
