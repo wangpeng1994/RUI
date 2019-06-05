@@ -24,7 +24,11 @@
   },
   "homepage": "https://github.com/wangpeng1994/rocket-ui#readme",
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
     "commitizen": "^3.1.1",
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
   }
 }
