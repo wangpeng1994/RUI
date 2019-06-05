@@ -1,1 +1,5 @@
-console.log('hi3')
+console.log('hello')
+const div = document.createElement('div')
+const text = document.createTextNode('Hi~')
+div.appendChild(text)
+document.body.appendChild(div)
