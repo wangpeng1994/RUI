@@ -1,5 +1,4 @@
-console.log('hello')
-const div = document.createElement('div')
-const text = document.createTextNode('Hi~')
-div.appendChild(text)
-document.body.appendChild(div)
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Button from './Button'
+
