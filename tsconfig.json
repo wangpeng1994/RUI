@@ -1,0 +1,8 @@
+{  
+  "compileOnSave": true,
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["es2015", "es2016", "dom"],
+    "esModuleInterop": true
+  }
+}

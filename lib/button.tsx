@@ -1,6 +1,18 @@
+import React from 'react';
+
 function Button() {
   return (
-    <div>按钮</div>
+    React.createElement('div', {
+      style: {
+        color: 'red'
+      },
+      className: 'button'
+    }, '点我')
+    // 和下面等价
+    // <div className="button" style={{ color: 'red' }}>
+    //   点我
+    // </div>
+
   );
 }
 
