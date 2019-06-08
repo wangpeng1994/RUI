@@ -1,10 +1,10 @@
 {  
   "compileOnSave": true,
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "dist/lib",
     "declaration": true,
     "jsx": "react",
     "lib": ["es2015", "es2016", "dom"],
-    "esModuleInterop": true
+    "esModuleInterop": true // 可以解决react等import的问题
   }
 }
