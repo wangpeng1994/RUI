@@ -1,7 +1,7 @@
-const base = require('./webpack.config');
+const common = require('./webpack.common');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = Object.assign({}, base, {
+module.exports = Object.assign({}, common, {
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({

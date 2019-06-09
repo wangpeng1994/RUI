@@ -1,6 +1,6 @@
-const base = require('./webpack.config');
+const common = require('./webpack.common');
 
-module.exports = Object.assign({}, base, {
+module.exports = Object.assign({}, common, {
   mode: 'production',
   // 打包基于react的UI库时，不需要打包react框架
   externals: {
