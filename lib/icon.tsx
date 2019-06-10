@@ -1,5 +1,6 @@
 import React from 'react';
 import './importIcons';
+import './icon.scss';
 
 interface IconProps {
   name: string;
@@ -8,11 +9,9 @@ interface IconProps {
 // 声明函数组件接收的 props 的类型
 const Icon: React.FunctionComponent<IconProps> = (props) => { // < > 表示类型接收一个参数
   return (
-    <span>
-      <svg>
-        <use xlinkHref={`#${props.name}`} />
-      </svg>
-    </span>
+    <svg className="rui-icon">
+      <use xlinkHref={`#${props.name}`} />
+    </svg>
   );
 }
 

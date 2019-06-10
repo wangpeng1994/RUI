@@ -24,6 +24,14 @@ module.exports = {
         test: /\.svg$/,
         use: 'svg-sprite-loader' // 该 loader 可以将所有 svg 放入到页面中等待使用
         
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // creates style nodes from JS strings
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+        ]
       }
     ]
   },
