@@ -19,6 +19,11 @@ module.exports = {
       {
         test: /\.tsx?$/, 
         use: 'awesome-typescript-loader'
+      },
+      {
+        test: /\.svg$/,
+        use: 'svg-sprite-loader' // 该 loader 可以将所有 svg 放入到页面中等待使用
+        
       }
     ]
   },
