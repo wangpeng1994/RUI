@@ -1,5 +1,5 @@
 {
-  "name": "rocket-ui",
+  "name": "rui",
   "version": "1.0.0",
   "description": "A React.js UI Toolkit for Web",
   "main": "dist/lib/index.js",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangpeng1994/rocket-ui.git"
+    "url": "git+https://github.com/wangpeng1994/RUI.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wangpeng1994/rocket-ui/issues"
+    "url": "https://github.com/wangpeng1994/RUI/issues"
   },
-  "homepage": "https://github.com/wangpeng1994/rocket-ui#readme",
+  "homepage": "https://github.com/wangpeng1994/RUI#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
