@@ -1,20 +1,22 @@
 import React from 'react';
 import './importIcons';
 import './icon.scss';
+import classes from './helper/classnames';
 
-interface IconProps {
-  name: string;
-  // onClick: React.MouseEventHandler<SVGElement> // svg 元素的鼠标处理函数
-  onClick: React.MouseEventHandler<SVGElement>;
+interface IconProps extends React.SVGAttributes<SVGElement> { // 在最终元素上才会触发事件，之前只是传递
+  name: string; // 继承svg后自定义的属性
 }
 
 // 声明函数组件接收的 props 的类型
-const Icon: React.FunctionComponent<IconProps> = (props) => { // < > 表示类型接收一个参数
-  return (
-    <svg className="rui-icon" onClick={props.onClick}>
-      <use xlinkHref={`#${props.name}`} />
-    </svg>
-  );
-}
+const Icon: React.FunctionComponent<IconProps> =
+  ({ className, name, ...restProps }) => {
+    return (
+      <svg className={classes('rui-icon', className)}
+        {...restProps}
+      >
+        <use xlinkHref={`#${name}`} />
+      </svg>
+    );
+  }
 
 export default Icon;
