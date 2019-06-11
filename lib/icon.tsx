@@ -5,7 +5,7 @@ import './icon.scss';
 interface IconProps {
   name: string;
   // onClick: React.MouseEventHandler<SVGElement> // svg 元素的鼠标处理函数
-  onClick: () => void
+  onClick: React.MouseEventHandler<SVGElement>;
 }
 
 // 声明函数组件接收的 props 的类型
