@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Icon from './icon';
+import Icon from './icon/icon';
 
 // 外部组件中的事件只是传递，而不是触发
 const fn: React.MouseEventHandler = e => {
