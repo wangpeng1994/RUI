@@ -1,6 +1,9 @@
 module.exports = {
   "verbose": true,
-  preset: 'ts-jest',
   // testEnvironment: 'node', // Default: 'jsdom'
   // transform: null
+  transform: {
+    "^.+\\.(js|jsx)$": "babel-jest",
+    '^.+\\.(ts|tsx)$': 'ts-jest'
+  }
 };
