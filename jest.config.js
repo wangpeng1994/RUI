@@ -4,7 +4,9 @@
  * 否则会遵循默认的缺省配置
  */
 module.exports = {
-  "verbose": true,
+  verbose: true,
+  collectCoverage: true,
+  reporters: ['default', 'jest-junit'], // 增加额外的分析报表
   // testEnvironment: 'node', // Default: 'jsdom'
   transform: {
     "^.+\\.(js|jsx)$": "babel-jest",
