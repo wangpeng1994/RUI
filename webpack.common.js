@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: 'svg-sprite-loader' // 该 loader 可以将所有 svg 放入到页面中等待使用
+        use: 'svg-sprite-loader'
         
       },
       {
