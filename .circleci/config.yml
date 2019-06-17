@@ -1,4 +1,4 @@
-#https://github.com/revolunet/create-react-app-circleci/blob/master/.circleci/config.yml
+# https://github.com/revolunet/create-react-app-circleci/blob/master/.circleci/config.yml
 defaults: &defaults
   docker:
     - image: circleci/node:8
@@ -31,6 +31,7 @@ jobs:
       - run: yarn ci
       - store_test_results:
           path: test-results
+  # build 是必须有的 job，且未指定 workflows 时，jobs 只会执行 build（会失败，因为没有 install）
   build:
     <<: *defaults
     steps:
