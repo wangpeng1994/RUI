@@ -5,8 +5,8 @@
  */
 module.exports = {
   'verbose': true,
-  reporters: ['default', 'jest-junit'], // 增加额外的分析报告  
-  // 生成完整的测试覆盖率报告
+  reporters: ['default', 'jest-junit'], // junit用来生成测试报告
+  // 生成覆盖率报告
   collectCoverage: true,
   collectCoverageFrom: ['lib/**/*.{js,jsx,ts,tsx}', '!**/node_modules/**'],
   coverageDirectory: 'coverage',
