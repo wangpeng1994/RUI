@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="0" time="22.109">
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-06-17T03:06:32" time="13.38" tests="2">
-    <testcase classname="icon render successfully" name="icon render successfully" time="0.015">
-    </testcase>
-    <testcase classname="icon onClick" name="icon onClick" time="0.045">
+<testsuites name="jest tests" tests="9" failures="0" time="8.543">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-06-17T14:11:17" time="4.013" tests="1">
+    <testcase classname="button 是个 div" name="button 是个 div" time="0.011">
     </testcase>
   </testsuite>
-  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2019-06-17T03:06:45" time="0.434" tests="5">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-06-17T14:11:21" time="0.216" tests="1">
+    <testcase classname=" 1 加 2 应该等于 3" name=" 1 加 2 应该等于 3" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-06-17T14:11:22" time="0.305" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.002">
+    </testcase>
+    <testcase classname="icon onClick" name="icon onClick" time="0.036">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2019-06-17T14:11:22" time="0.218" tests="5">
     <testcase classname="classes 接受 1 个 className" name="classes 接受 1 个 className" time="0.001">
     </testcase>
     <testcase classname="classes 接受 2 个 className" name="classes 接受 2 个 className" time="0">
     </testcase>
     <testcase classname="classes 接受 undefined 结果中不含 undefined" name="classes 接受 undefined 结果中不含 undefined" time="0">
     </testcase>
-    <testcase classname="classes 接受了奇怪的值应该被过滤" name="classes 接受了奇怪的值应该被过滤" time="0.001">
+    <testcase classname="classes 接受了奇怪的值应该被过滤" name="classes 接受了奇怪的值应该被过滤" time="0">
     </testcase>
-    <testcase classname="classes 接受 0 个参数 结果应为空字符串" name="classes 接受 0 个参数 结果应为空字符串" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-06-17T03:06:45" time="0.354" tests="1">
-    <testcase classname=" 1 加 2 应该等于 3" name=" 1 加 2 应该等于 3" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-06-17T03:06:46" time="0.453" tests="1">
-    <testcase classname="button 是个 div" name="button 是个 div" time="0.003">
+    <testcase classname="classes 接受 0 个参数 结果应为空字符串" name="classes 接受 0 个参数 结果应为空字符串" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
