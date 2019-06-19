@@ -2,7 +2,6 @@
 defaults: &defaults
   docker:
     - image: circleci/node:8
-
 version: 2
 
 jobs:
@@ -43,6 +42,16 @@ jobs:
           root: .
           paths:
             - dist
+            - package.json
+            - LICENSE
+            - README.md
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: npm publish
+
 
 workflows:
   version: 2
@@ -55,3 +64,6 @@ workflows:
       - build:
           requires:
             - test
+      - publish:
+          requires:
+            - build
