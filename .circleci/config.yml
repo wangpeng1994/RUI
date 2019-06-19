@@ -67,3 +67,7 @@ workflows:
       - publish:
           requires:
             - build
+          # 只在有 tag 时进行publish
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
