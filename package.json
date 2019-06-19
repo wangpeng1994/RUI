@@ -1,9 +1,11 @@
 {
   "name": "rui888",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A React.js UI Toolkit for Web",
   "main": "dist/lib/index.js",
-  "files": ["/dist"],
+  "files": [
+    "/dist/**/*"
+  ],
   "types": "dist/lib/index.d.ts",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
