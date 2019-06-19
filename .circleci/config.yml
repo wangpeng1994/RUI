@@ -67,7 +67,9 @@ workflows:
       - publish:
           requires:
             - build
-          # 只在有 tag 时进行publish
+          # push 代码时分支打了 tag 才 publish
           filters:
             tags:
-              only: /v[0-9]+(\.[0-9]+)*/
+              only: /^v[0-9]+(\.[0-9]+)*/
+            branches: # 忽略分支的区别
+              ignore: /.*/
