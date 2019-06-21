@@ -2,7 +2,6 @@
 defaults: &defaults
   docker:
     - image: circleci/node:8
-
 version: 2
 
 jobs:
@@ -50,6 +49,16 @@ jobs:
           root: .
           paths:
             - dist
+            - package.json
+            - LICENSE
+            - README.md
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - run: npm publish
 
 workflows:
   version: 2
@@ -62,3 +71,12 @@ workflows:
       - build:
           requires:
             - test
+      - publish:
+          requires:
+            - build
+          # push 代码时分支打了 tag 才 publish
+          filters:
+            tags:
+              only: /^v[0-9]+(\.[0-9]+)*/
+            branches: # 忽略分支的区别
+              ignore: /.*/
