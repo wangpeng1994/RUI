@@ -5,13 +5,7 @@
  */
 module.exports = {
   'verbose': true,
-  reporters: ['default', 'jest-junit'], // junit用来生成测试报告
-  // 生成覆盖率报告
-  collectCoverage: true,
-  collectCoverageFrom: ['lib/**/*.{js,jsx,ts,tsx}', '!**/node_modules/**'],
-  coverageDirectory: 'coverage',
-  coverageReporters: ['text', 'lcov'],
-
+  reporters: ['default'], 
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
     '^.+\\.(ts|tsx)$': 'ts-jest'
