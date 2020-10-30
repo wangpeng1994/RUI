@@ -12,7 +12,6 @@ function Button() {
     <div className="button" style={{ color: 'red' }}>
       点我啊
     </div>
-
   );
 }
 

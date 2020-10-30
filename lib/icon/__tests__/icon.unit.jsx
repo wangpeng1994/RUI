@@ -10,7 +10,7 @@ describe('icon', () => {
   });
   it('onClick', () => {
     const fn = jest.fn();
-    const wrapper  = mount(<Icon name="qq" onClick={fn} />); // dom 事件是同步调用的，所以 ok
+    const wrapper = mount(<Icon name="qq" onClick={fn} />); // dom 事件是同步调用的，所以 ok
     wrapper.find('svg').simulate('click');
     expect(fn).toBeCalled();
   });

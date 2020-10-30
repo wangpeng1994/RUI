@@ -1,6 +1,6 @@
 .vscode
 
-# 该目录是运行测试时 jset-junit 生成的，完全为了对接 circle ci 
+# 该目录是运行测试时 jset-junit 生成的，完全为了对接 circle ci
 test-results
 
 dist/*
@@ -66,3 +66,5 @@ typings/
 
 # next.js build output
 .next
+
+.idea

@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import IconExample from './lib/icon/icon.example';
 
-ReactDOM.render((
+ReactDOM.render(
   <Router>
     <header>
       <div className="logo">RUI</div>
@@ -31,5 +31,6 @@ ReactDOM.render((
         </Switch>
       </main>
     </div>
-  </Router>
-), document.getElementById('root'));
+  </Router>,
+  document.getElementById('root')
+);

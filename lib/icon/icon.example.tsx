@@ -8,8 +8,7 @@ const IconExample: React.FunctionComponent = () => {
       <Icon name="qq" />
       <Icon name="wechat" />
     </div>
-  )
-}
-
+  );
+};
 
 export default IconExample;
